@@ -5,22 +5,21 @@
 	<title>Animal Trading Cards</title>
 	<!--<link href="styles.css" rel="stylesheet">-->
 	<style type="text/css">
+		
+
+
 		h3 {
     		padding: 5px;
     		box-sizing: border-box;
     		width: 300px; /* to make as wide as image */
-    		border: 1px solid grey;
     		text-align: center;
 
 		}
 
 		img {
 			padding: 10px;
+			width: 300px;
 			box-sizing: border-box;
-    		width: 300px; /* to make as wide as image */
-    		border: 1px solid grey;
-    		text-align: center;
-
 		}
 
 		div {
@@ -34,23 +33,39 @@
 
 		.info {
 			font-style: italic;
-			text-align: center;
-			box-sizing: border-box;
-			padding: 10px;
-    		width: 300px; /* to make as wide as image */
-    		border: 1px solid grey; /* how can I place this image around .info, li, and .summary? */
-    		
 		}
 
 		.summary {
-			width: 300px;
-			/* justify-content: space-between; wtf flexbox */
+
 		}
 
-		li {
-			list-style: none;
+		.outerborder {
+			border: double;
+			border-color: #53737e;
+			-webkit-box-shadow: 10px 10px 2px 0px rgba(54,123,140,0.35);
+-moz-box-shadow: 10px 10px 2px 0px rgba(54,123,140,0.35);
+box-shadow: 10px 10px 2px 0px rgba(54,123,140,0.35);
+		}
+
+		.innerborder {
+			border: double;
+			border-color: #53737e;
+		}
+
+		.container {
 			width: 300px;
-			/* I would like to make this flush with the left so 300px will line it up with everything else on the card. */
+			padding: 5px;
+		}
+
+		.textcontainer {
+			padding: 0px 5px 0px 5px;
+
+		}
+
+
+		ul {
+			list-style: none;
+			padding: 0; /* to make this flush with the left so 300px will line it up with everything else on the card. */
 		}
 
 		span {
@@ -61,23 +76,23 @@
 	</style>
 </head>
 <body>
-	<div>
+	<div class="container outerborder">
 		<!-- your favorite animal's name goes here -->
 		<h3>OH LOOK A SQUIRREL!</h3>
 		<!-- your favorite animal's image goes here -->
 		<img src="squirrel.jpg" alt="a squirrel stands on the sidewalk looking at you from eyelevel with a speak bubble that says 'hi there'">
-		<div>
+		<div class="innerborder textcontainer">
 			<!-- your favorite animal's interesting fact goes here -->
-			<p class="info">The squirrel is my little sister's favorite animal and she feels it's personality matches her own so we enjoy sending her pictures of squirrels, especially the friendly food-grabbers! This one's for you, sibling!</p>
+			<p class="info">The squirrel is my little sister's favorite animal because she feels it's energy and determination matches her own. All her loving siblings and fans enjoy sending her pictures of squirrels, especially the friendly food-grabbers! This one's for you, sibling!</p>
 			<ul>
 				<!-- your favorite animal's list items go here -->
 				<li><span>Fave food</span>: Dropped Oreos, preferably still in package to ensure freshness!</li>
 				<li><span>Fave passtime</span>: Glaring at people until they drop their food</li>
 				<li><span>Fave vaycay spot</span>: Carnival trash can</li>
-				<li><span>Aspiration</span>: To gather a whole mountain of Oreos and sit beside them as I learn to program!</li>
+				<li><span>Aspiration</span>: To gather a whole mountain of Oreos and sit beside them as she learns to program!</li>
 			</ul>
 			<!-- your favorite animal's description goes here -->
-			<p class="summary">My favorite animal can have many colors or coat and shapes of ears (all beautiful!) and can live in urban or rural areas. This one in particular enjoys being with people and is coming to say hello to you? Won't you give him an Oreo?</p>
+			<p class="summary border">My favorite animal can have many colors or coat and shapes of ears (all beautiful!) and can live in urban or rural areas. This one in particular enjoys being with people and is coming to say hello to you! Won't you give her an Oreo?</p>
 		</div>
 	</div>
 </body>

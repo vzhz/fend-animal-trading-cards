@@ -1,7 +1,7 @@
 Hello! I practiced some CSS here.
 
 You can see the mockup I was to emutate.
-The results of my code can be previewed [here](https://htmlpreview.github.io/vzhz/fend-animal-trading-cards/index-veronica-card.html).
+The results of my code can be previewed [here](https://htmlpreview.github.io/?https://github.com/vzhz/fend-animal-trading-cards/blob/master/index-veronica-card.html).
 
 Corrently my concerns are:
 - It seems that my CSS is redundant re: borders, width, and padding, but I get the CSS to apply to multiple elements.
